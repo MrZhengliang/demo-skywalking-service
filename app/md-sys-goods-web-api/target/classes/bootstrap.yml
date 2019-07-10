@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: 'sys-goods-service'
+  profiles:
+    active: dev
+
+
+#打包或者运行的时候修改下active
+app:
+  id: 80003
+
+
+# set apollo meta server address, adjust to actual address if necessary
+---
+spring:
+  profiles: dev
+
+---
+spring:
+  profiles: test
+
+---
+spring:
+  profiles: pre
+
+---
+spring:
+  profiles: prod
