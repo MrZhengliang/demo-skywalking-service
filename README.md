@@ -34,3 +34,8 @@
  * 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
  * 	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
  */
+ 
+ 
+ https://github.com/apache/skywalking/issues/3035
+ 
+actually ,public modifier for controller ReqeustMapping method should be best practice.

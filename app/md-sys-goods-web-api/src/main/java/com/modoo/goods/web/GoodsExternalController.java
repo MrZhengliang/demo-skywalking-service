@@ -40,7 +40,7 @@ public class GoodsExternalController {
      * @return
      */
     @RequestMapping(value = "/queryShopGoodsBySKu", method = RequestMethod.POST)
-    private String queryShopGoodsBySKu(@Validated(GoodsExternalRequest.queryShopGoodsBySKu.class) @RequestBody GoodsExternalRequest goodsExternalRequest) {
+    public String queryShopGoodsBySKu(@Validated(GoodsExternalRequest.queryShopGoodsBySKu.class) @RequestBody GoodsExternalRequest goodsExternalRequest) {
         log.info("goodsExternalService.searchShopGoodsBySku 请求参数 -------> {}", goodsExternalRequest.toString());
         List<ShopGoodsBySkuDTO> list = new ArrayList<>(NumberConstants.NUMBER_ZERO);
         try {
